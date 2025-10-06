@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warren Road - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #60381f;
+            background: linear-gradient(135deg, #f6db8c 0%, #d4ab6b 50%, #a99a59 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(96, 56, 31, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #8e9f36 0%, #a99a59 50%, #645728 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #f6db8c, #d4ab6b);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .app-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .app-subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .app-description {
+            background: linear-gradient(135deg, #f6db8c 0%, #d4ab6b 100%);
+            color: #60381f;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 15px;
+            border-left: 5px solid #8e9f36;
+            box-shadow: 0 5px 15px rgba(96, 56, 31, 0.1);
+        }
+        
+        .app-description h3 {
+            color: #60381f;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        h1 {
+            color: #8e9f36;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #8e9f36, #a99a59);
+            border-radius: 2px;
+        }
+        
+        h2 {
+            color: #645728;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+            padding-left: 15px;
+            border-left: 4px solid #8e9f36;
+            background: linear-gradient(90deg, rgba(142, 159, 54, 0.1), transparent);
+            padding: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        h3 {
+            color: #a25a31;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #f6db8c, #d4ab6b);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #8e9f36;
+            box-shadow: 0 3px 10px rgba(96, 56, 31, 0.1);
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #645728, #8e9f36);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-info h3 {
+            color: #f6db8c;
+            margin-bottom: 15px;
+        }
+        
+        .email {
+            color: #f6db8c;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .email:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #60381f, #645728);
+            color: #f6db8c;
+            padding: 30px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        
+        .effective-date {
+            background: linear-gradient(135deg, #a25a31, #60381f);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .app-title {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+        
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .floating-element {
+            position: absolute;
+            opacity: 0.1;
+            animation: floatAround 20s infinite linear;
+        }
+        
+        .floating-element:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .floating-element:nth-child(2) { top: 20%; right: 10%; animation-delay: -2s; }
+        .floating-element:nth-child(3) { bottom: 30%; left: 20%; animation-delay: -4s; }
+        .floating-element:nth-child(4) { bottom: 20%; right: 20%; animation-delay: -6s; }
+        .floating-element:nth-child(5) { top: 50%; left: 5%; animation-delay: -8s; }
+        
+        @keyframes floatAround {
+            0% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-20px) rotate(90deg); }
+            50% { transform: translateY(0px) rotate(180deg); }
+            75% { transform: translateY(20px) rotate(270deg); }
+            100% { transform: translateY(0px) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-element">🪑</div>
+        <div class="floating-element">💻</div>
+        <div class="floating-element">📊</div>
+        <div class="floating-element">🏆</div>
+        <div class="floating-element">📱</div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">🛣️</div>
+            <h1 class="app-title">Warren Road</h1>
+            <p class="app-subtitle">Privacy Policy</p>
+        </div>
+        
+        <div class="app-description">
+            <h3>About Warren Road</h3>
+            <p>Warren Road is a unique app that helps you manage and track two storages in one place. Whether it's office equipment or organizational tools, everything is structured and easy to access. The app includes clear statistics so you can always see how your storages are growing and what has been added. Achievements turn the process into a game, motivating you to reach new milestones. You can also create a personal profile with your data, making the experience more individual and engaging. And if you ever need guidance, the info screen will explain the purpose of the app and show you how to use it effectively. WarrenRoad is not just about storing items — it's about creating order, progress, and a smarter way to manage what matters to you.</p>
+        </div>
+        
+        <div class="content">
+            <p>This privacy policy applies to the Warren Road app (hereby referred to as "Application") for mobile devices that was created by Cemil Sucu (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".</p>
+            
+            <h2>Information Collection and Use</h2>
+            <p>The Application collects information when you download and use it. This information may include information such as:</p>
+            <ul>
+                <li>Your device's Internet Protocol address (e.g. IP address)</li>
+                <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
+                <li>The time spent on the Application</li>
+                <li>The operating system you use on your mobile device</li>
+            </ul>
+            
+            <p>The Application does not gather precise information about the location of your mobile device.</p>
+            
+            <div class="highlight">
+                <p><strong>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.</strong></p>
+            </div>
+            
+            <p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information. The information that the Service Provider request will be retained by them and used as described in this privacy policy.</p>
+            
+            <h2>Third Party Access</h2>
+            <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.</p>
+            
+            <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
+            <ul>
+                <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
+                <li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
+                <li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+            </ul>
+            
+            <h2>Opt-Out Rights</h2>
+            <p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p>
+            
+            <h2>Data Retention Policy</h2>
+            <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at <a href="mailto:cemilsucu39@hotmail.com" class="email">cemilsucu39@hotmail.com</a> and they will respond in a reasonable time.</p>
+            
+            <h2>Children</h2>
+            <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p>
+            
+            <p>The Service Provider does not knowingly collect personally identifiable information from children. The Service Provider encourages all children to never submit any personally identifiable information through the Application and/or Services. The Service Provider encourage parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to the Service Provider through the Application and/or Services, please contact the Service Provider (<a href="mailto:cemilsucu39@hotmail.com" class="email">cemilsucu39@hotmail.com</a>) so that they will be able to take the necessary actions. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).</p>
+            
+            <h2>Security</h2>
+            <p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.</p>
+            
+            <h2>Changes</h2>
+            <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>
+            
+            <div class="effective-date">
+                This privacy policy is effective as of 2025-10-06
+            </div>
+            
+            <h2>Your Consent</h2>
+            <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p>
+            
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at <a href="mailto:cemilsucu39@hotmail.com" class="email">cemilsucu39@hotmail.com</a>.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Warren Road. All rights reserved.</p>
+            <p>Created with ❤️ for better organization and productivity.</p>
+        </div>
+    </div>
+</body>
+</html>
