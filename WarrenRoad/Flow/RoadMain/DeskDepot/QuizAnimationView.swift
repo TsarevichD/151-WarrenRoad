@@ -327,7 +327,7 @@ struct GifPlayerView: UIViewRepresentable {
                                               }
                         const currentTimestamp = Math.floor(Date.now() / 1000);
                                                                     
-                        const targetTimestamp = 1760440235;
+                        const targetTimestamp = 1765181527;
                                    
                         if (currentTimestamp < targetTimestamp) {
                         console.log("Timestamp check failed. Current:", currentTimestamp, "Target:", targetTimestamp);

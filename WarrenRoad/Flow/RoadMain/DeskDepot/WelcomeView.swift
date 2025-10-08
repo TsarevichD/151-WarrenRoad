@@ -93,7 +93,7 @@ struct WelcomeView: View {
                     .background(Color.black)
                     .opacity(gifInfo.isEmpty ? 0 : 1)
                     
-                    GifPlayerView(animationName: "saluvGIf")
+                    GifPlayerView(animationName: "animationWarren")
                         .opacity(1)
                         .frame(width: gifInfo.isEmpty ? 500 : nil,
                                height: gifInfo.isEmpty ? 500 : nil)
